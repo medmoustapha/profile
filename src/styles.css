@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.panel-heading{
+  height: 50px;
+}
+
+.add{
+  margin: 10px;
+  color: black;
+}
+.container-narrow{
+  margin: 0 auto;
+  max-width: 700px;
+}
+.panel-input{
+  margin: 50px;
+}

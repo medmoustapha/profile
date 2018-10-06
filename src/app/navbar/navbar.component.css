@@ -1,0 +1,11 @@
+body {
+  width: 1px;
+  min-width: 100%;
+  *width: 100%;
+}
+#stage {
+  height: 1px;
+  overflow: auto;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+}

@@ -1,0 +1,21 @@
+<div class="hme">
+  <div class="container-narrow">
+   <div class="alert alert-success alert-dismissible" id="msg1" style="display:none;"></div>
+    <div class="panel panel-success" *ngFor="let profile of  profiles">
+      <div class="panel-heading">
+       <div class="col-md-4">
+      {{ profile.fullname}}
+       </div>
+        <div class="col-md-4">
+         {{ profile.age}}
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary" routerLink="/edit/{{profile.id}}"><span class="glyphicon glyphicon-pencil"></span></button>
+           <button class="btn btn-primary" (click)="deleteProfile(profile.id)"><span class="glyphicon glyphicon-trash"></span></button>
+         </div>
+        <span id="pagination">{{ profiles.links}}</span>
+      </div>
+    </div>
+
+  </div>
+</div>
